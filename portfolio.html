@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gundumalla Sai Nikhila — Portfolio</title>
+  <meta name="description" content="Portfolio of Gundumalla Sai Nikhila — Front-End Developer & Data Science student." />
+  <style>
+    :root{
+      --accent:#6C63FF;
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --max-width:1100px;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, Arial, "Helvetica Neue", sans-serif;margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    .container{max-width:var(--max-width);margin:40px auto;padding:24px}
+
+    /* Header */
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#FF6B6B);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    .name{font-size:20px;font-weight:700}
+    .subtitle{color:var(--muted);font-size:14px}
+
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12, 18, 30, 0.06)}
+    .lead{font-size:18px;font-weight:600;margin:0 0 8px}
+    .muted{color:var(--muted)}
+
+    /* skills & projects */
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:24px;margin-top:24px}
+    .skills ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+    .skills li{background:#eef2ff;padding:8px 12px;border-radius:999px;font-weight:600;color:var(--accent)}
+
+    .project{margin-bottom:14px;padding:12px;border-radius:10px;border:1px solid #eef2ff}
+    .project h4{margin:0 0 6px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    /* education & contact */
+    .meta dt{font-weight:700}
+    .meta dd{margin:0 0 8px;color:var(--muted)}
+
+    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      nav a{margin-left:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">SN</div>
+        <div>
+          <div class="name">Gundumalla Sai Nikhila</div>
+          <div class="subtitle">Front-End Developer • Data Science Student • UI/UX Enthusiast</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <p class="lead">Hi — I’m <strong>Gundumalla Sai Nikhila</strong>. I build clean, responsive front-end experiences and enjoy solving problems with code. Currently studying Data Science and learning modern web development.</p>
+        <p class="muted">I’m available for internships and entry-level front-end roles. I enjoy learning new tools and collaborating on web projects.</p>
+
+        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#contact" style="text-decoration:none;background:var(--accent);color:white;padding:10px 14px;border-radius:10px;font-weight:700">Get in touch</a>
+          <a href="#projects" style="text-decoration:none;border-radius:10px;padding:10px 14px;border:1px solid #e6e9ff;color:var(--accent);font-weight:700">See projects</a>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:12px;color:var(--muted);font-size:14px">
+          <div>📍 Hyderabad, India</div>
+          <div>📧 sainikhilagundumalla@gmail.com</div>
+          <div>📞 +91 6301586629</div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Quick Info</h3>
+        <dl class="meta">
+          <dt>Role</dt>
+          <dd>Front-End Developer / Data Science student</dd>
+
+          <dt>Tools</dt>
+          <dd>Figma • Canva • Wix • VS Code</dd>
+
+          <dt>Languages</dt>
+          <dd>Python • C++ • Java • JavaScript</dd>
+
+          <dt>Web</dt>
+          <dd>HTML • CSS • JavaScript</dd>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="skills" style="margin-top:26px">
+      <div class="card">
+        <h3 style="margin-top:0">Skills</h3>
+        <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px">
+            <h4 style="margin-bottom:6px">Technical</h4>
+            <div class="skills">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Git & GitHub</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="flex:1;min-width:260px">
+            <h4 style="margin-bottom:6px">Design & Tools</h4>
+            <div class="skills">
+              <ul>
+                <li>Figma</li>
+                <li>Canva</li>
+                <li>Wix</li>
+                <li>UI/UX Basics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h3>Projects</h3>
+      <div class="card">
+        <div class="project">
+          <h4>Mind Matrix</h4>
+          <p>EdTech platform focused on empowering learners by providing curated learning content and a personalized learning experience.</p>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted)">Technologies: HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="project">
+          <h4>Travel and Tourism Website</h4>
+          <p>Website that showcases destinations, local attractions, travel tips and supports booking for flights, hotels, and tours.</p>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted)">Technologies: HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="project">
+          <h4>HealthE-Connect</h4>
+          <p>Telehealth platform enabling video consultations, online prescriptions, and basic health record management.</p>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted)">Technologies: HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" style="margin-top:18px">
+      <div class="card">
+        <h3 style="margin-top:0">Education</h3>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div>
